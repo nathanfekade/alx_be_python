@@ -12,12 +12,8 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        try:
-            choice = input("Enter your choice: ")
-            int(choice)
-            
-        except ValueError:
-                print("please enter a valid number")
+        choice = input("Enter your choice: ")
+
         
         if choice == '1':
                 item_name = input("Item name: ")
