@@ -20,5 +20,5 @@ if str.isdigit(temperature):
     else:
         print('invalid input')
 else:
-        print('Invalid input. Please enter a number')
+        print('Invalid temperature. Please enter a numeric value.')
 
