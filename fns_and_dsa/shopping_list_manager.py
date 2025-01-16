@@ -15,22 +15,22 @@ def main():
         choice = input("Enter your choice: ")
         
         if str.isdigit(choice):
-            
-            if choice == '1':
+            choice = int(choice)
+            if choice == 1:
                     item_name = input("Item name: ")
                     shopping_list.append(item_name)
 
-            elif choice == '2':
+            elif choice == 2:
                 item_name = input("Item name: ")
                 if item_name in shopping_list:
                     shopping_list.remove(item_name)
                 else:
                     print("item does not exist")
 
-            elif choice == '3':
+            elif choice == 3:
                 for item in shopping_list:
                     print(item)
-            elif choice == '4':
+            elif choice == 4:
                 print("Goodbye!")
                 break
             else:
