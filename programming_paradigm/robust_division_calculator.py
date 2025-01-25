@@ -6,7 +6,7 @@ def safe_divide(numerator, denominator):
         denominator = float(denominator)
 
         result = numerator/denominator
-        
+        return result
     except ValueError:
         print("Error: Please enter numeric values only")
     except ZeroDivisionError:
