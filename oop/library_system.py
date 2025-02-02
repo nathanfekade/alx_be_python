@@ -18,8 +18,10 @@ class PrintBook(Book):
 
 class Library:
 
-    books = []
-    
+    def __init__(self):
+        self.books = []
+        
+
     def __str__(self):
         return f"{self.title} by {self.author}"
     def add_book(self, book):
